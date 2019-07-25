@@ -69,4 +69,5 @@ gulp.task("deploy", function(){
     ghPages.publish("dist")
 
 })
+
 gulp.task('default',  ["html", "sass", "js", "img", "watch"]);
