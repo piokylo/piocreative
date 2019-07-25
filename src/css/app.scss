@@ -9,7 +9,26 @@ $body-font: 'Libre Franklin', sans-serif;
 body{
 background-color: $prime-color;
 color: #000;
-font-family: $body-font;
 
 
+
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero h1 {
+    font-family: $body-font;
+    font-size: 64px;
+}
+section .headline {
+
+    margin: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
 }
