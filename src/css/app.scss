@@ -1,7 +1,7 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:200&display=swap');
 
-$prime-color: #f0f0f0;
+$prime-color: #fff;
 $body-font: 'Libre Franklin',
 sans-serif;
 
@@ -21,6 +21,7 @@ body {
     background-color: white;
     z-index: 1;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
 
 
@@ -54,7 +55,7 @@ h3{
 
 .hero h1 {
 
-    font-size: 72px;
+    font-size: 64px;
 }
 
 .text p {
@@ -125,6 +126,10 @@ section .text {
 
     background-color: #dce9ff;
 }
+.w {
+    background-color: #fff;
+
+}
 section .container .services h3 {
 
     text-align: center;
@@ -159,12 +164,14 @@ section .container .services h3 {
     .container {
 
         width: 100%;
-        height: 100vh;
+       height: auto;
+       padding-top: 100px;
     }
 
     section .text {
         padding: 100px 30px ;
-        height: 45vh;
+        height: auto;
+   
     }
 
     section .headline {
