@@ -119,20 +119,28 @@ section .text {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    
+    position: sticky;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
 }
+section .text h2, section .text p {
+color: #fff;
+}
+section .y {
+    background-image: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/source.gif);
 
-.y {
-    background-color: #FF8760;
 }
 
 .b {
 
-    background-color: #8DB9E4;
+    background-image: url(https://media.giphy.com/media/l41lI3C51XtdvxUxq/source.gif);
 }
 
 .w {
-    background-color: #fff;
+    background-image: url(https://media.giphy.com/media/dE3dOmeBubbPi/source.gif);
 
 }
 
@@ -169,10 +177,10 @@ position: relative;
 
 }
 .contact-heading{
-    position: absolute;
-    top: -85px;
+   
     font-size: 44px;
-    left: 0;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 input {
@@ -183,7 +191,7 @@ form .submit{
     border-color: #fff;
     color: #000;
     font-size: 18px;
-    letter-spacing: 2px;
+
     width: auto;
     font-weight: 600;
 
@@ -195,6 +203,11 @@ form .submit{
 .contact {
 display: flex;
 justify-content: center;
+
+}
+footer {
+    height: 45vh;
+    background-color: #000;
 
 }
 @media (max-width: 800px) {
