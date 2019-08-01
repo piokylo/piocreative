@@ -29,6 +29,11 @@ gulp.task("html", function(){
         .pipe(gulp.dest("dist"))
 
 })
+gulp.task("php", function(){
+    return gulp.src("src/*.php")
+        .pipe(gulp.dest("dist"))
+
+})
 
 
 gulp.task("img", function(){
@@ -59,6 +64,7 @@ gulp.task("watch", function() {
     gulp.watch("src/*.html", ["html"]).on("change", browserSync.reload)
     gulp.watch("src/css/app.scss", ["sass"])
     gulp.watch("src/js/*.js", ["js"])
+    gulp.watch("src/*.php", ["php"]).on("change", browserSync.reload)
     gulp.watch("src/img/*", ["img"])
 
 })
@@ -70,4 +76,4 @@ gulp.task("deploy", function(){
 
 })
 
-gulp.task('default',  ["html", "sass", "js", "img", "watch"]);
+gulp.task('default',  ["html", "sass", "js", "php", "img", "watch"]);

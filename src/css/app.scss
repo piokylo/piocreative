@@ -210,6 +210,11 @@ footer {
     background-color: #000;
 
 }
+
+form .submit:hover{
+    cursor: pointer;
+
+}
 @media (max-width: 800px) {
     .parts {
         display: block;
