@@ -57,7 +57,7 @@ h3 {}
 
 .hero h1 {
 
-    font-size: 64px;
+    font-size: 54px;
 }
 
 .text p {
@@ -208,9 +208,10 @@ justify-content: center;
 
 }
 footer {
-    height: 45vh;
+   
     background-color: #000;
     padding-top: 70px;
+    padding-bottom: 70px;
 
 }
 .contact-heading h3{
@@ -248,7 +249,7 @@ form .submit:hover{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 70px;
+    margin: 0 70px;
 }
 
 .footer-content ul li {
@@ -274,9 +275,10 @@ form .submit:hover{
 
 }
 .address p {
-margin-bottom: 15px;
+margin-bottom: 5px;
 
 }
+
 @media (max-width: 800px) {
     .parts {
         display: block;
@@ -319,4 +321,155 @@ margin-bottom: 15px;
         padding: 30px;
 
     }
+}
+@media(max-width:715px) {
+
+    .header {
+      
+        padding: 25px 40px;
+    }
+    .header p {
+    
+        font-size: 18px;
+    
+    }
+    .header img{
+        width: 50px;
+
+
+    }
+    .footer-content {
+        margin: 0 40px;
+
+    }
+        
+}
+@media(max-width:700px){
+    .header {
+      
+        padding: 25px 15px;
+    }
+    .footer-content {
+        margin: 0 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .social-media{
+        margin-top: 20px;
+        
+        }
+        .text p {
+            font-size: 32px;
+           
+        
+        }
+        section .text {
+
+            padding:100px 15px;
+        }
+        .hand img{
+            width: 25px;
+    
+    
+        }
+        .form-control {
+            width: 300px;
+
+        }
+        form {
+            
+            display: flex;
+            flex-direction: column;
+          
+            align-items: center;
+        }
+        .contact-heading {
+            font-size: 32px;
+        }
+}
+@media(max-width:420px){
+    section .headline {
+        padding: 15px;
+    }
+    .header p {
+    
+        font-size: 12px;
+    
+    }
+    .hero {
+        height: 100vh!important;
+    }
+    
+        .hero h1 {
+            font-size: 18px;
+        }
+
+        .text p {
+            font-size: 24px!important;
+        }
+        .text h2 {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+    section .container .services h3 {
+        text-align: center;
+        margin-bottom: 80px;
+        font-size: 22px;
+    }
+    .hand img {
+        width: 45px;
+        margin-bottom: 15px;
+    }
+    .contact-heading h3 {
+        margin: 20px;
+    }
+    .contact-heading {
+        font-size: 28px;
+        display: flex;
+    flex-direction: column-reverse;
+    }
+    .form-control {
+        width: 300px;
+        text-align: center;
+    }
+    .business {
+        height: 45px;
+
+    }
+    .form-control {
+        width: 600px;
+        background: gainsboro;
+        border-radius: 26px;
+        border: none;
+        outline: 0;
+        /* border-bottom: 1px solid gray; */
+        color: gray;
+        font-size: 18px;
+        margin-bottom: 18px;
+        font-family: "Libre Franklin",sans-serif;
+    }
+    .form-control {
+        width: 300px;
+        text-align: center;
+    }
+    input, select, textarea {
+        font: inherit;
+        line-height: 2.3;
+    }
+}
+@media (max-height: 600px) {
+.hero {
+
+    height: auto;
+}
+
+.text p {
+    font-size: 32px;
+   
+
+}
+
 }
