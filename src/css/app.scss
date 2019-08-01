@@ -404,7 +404,7 @@ margin-bottom: 5px;
     }
     
         .hero h1 {
-            font-size: 18px;
+            font-size: 22px;
         }
 
         .text p {
@@ -459,6 +459,10 @@ margin-bottom: 5px;
     input, select, textarea {
         font: inherit;
         line-height: 2.3;
+    }
+    .submit{
+        background: 0;
+
     }
 }
 @media (max-height: 600px) {
