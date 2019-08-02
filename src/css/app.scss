@@ -122,13 +122,13 @@ section .text {
 
     border-radius: 100%;
 }
-.swiggle {
-width: 303px;
-height: 63px;
-background-image: url();
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center
+.squiggle {
+    width: 303px;
+    height: 63px;
+    background-image: url(img/squiggle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .shapes {
     position: absolute;
