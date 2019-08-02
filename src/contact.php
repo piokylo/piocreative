@@ -5,17 +5,18 @@
     $message = $_POST['message'];
 
 
-    $email_from = 'Admin@piocreative.com' 
+    $email_from = 'admin@piocreative.com'; 
 
-    $email_subject = "New Query"
+    $email_subject = "New Query";
 
     $email_body = "User Name: $name.\n";
                     "User Email: $visiter_email.\n";
-                        "User Message: $message.\n";
+                        "User Business:  $business .\n";
+                            "User Message: $message.\n";
 
-    $to = "piocreative.com" 
+    $to = "piocreative.com";
     $headers = "From $email_from \r\n";
-    $headers .= "Replay-To:: $visiter_email \r\n";
+    $headers .= "Reply-To:: $visiter_email \r\n";
     mail($to, $email_subject, $email_body, $headers);
     
     header("Location: index.html");
