@@ -5,7 +5,7 @@
     $message = $_POST['message'];
 
 
-    $email_from = 'admin@piocreative.com'; 
+    $email_from = 'piocreative.com'; 
 
     $email_subject = "New Query";
 
