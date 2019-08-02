@@ -125,7 +125,7 @@ section .text {
 .squiggle {
     width: 303px;
     height: 63px;
-    background-image: url(img/squiggle.svg);
+    background-image: url("img/squiggle.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
