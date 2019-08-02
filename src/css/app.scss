@@ -1,5 +1,5 @@
 @import "reset";
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:200,400,700&display=swap');
 
 $prime-color: #fff;
 $body-font: 'Libre Franklin',
@@ -36,6 +36,7 @@ body {
 .header p {
     width: 50%;
     font-size: 24px;
+    font-weight: 300;
 
 }
 
@@ -45,19 +46,22 @@ body {
     justify-content: center;
 
 }
-.color-1{
-background-color: #FC766AFF;
+
+.color-1 {
+    background-color: #FC766AFF;
 
 }
-.color-2{
-    background-color: #F9A12EFF;
-    
-    }
-    .color-3 {
-        background-color: #69D2E7;
-      
 
-    }
+.color-2 {
+    background-color: #F9A12EFF;
+
+}
+
+.color-3 {
+    background-color: #69D2E7;
+
+
+}
 
 h1,
 p,
@@ -71,10 +75,12 @@ h3 {}
 .hero h1 {
 
     font-size: 54px;
+    font-weight: 300;
 }
 
 .text p {
     font-size: 42px;
+    font-weight: 300;
 
 
 }
@@ -82,6 +88,7 @@ h3 {}
 .text h2 {
     margin-bottom: 35px;
     font-size: 24px;
+    font-weight: 300;
 
 
 }
@@ -123,18 +130,21 @@ section .text {
     justify-content: center;
     height: 130vh;
     padding-top: 250px;
-    position: relative; 
+    position: relative;
+    overflow: hidden;
 
 
 }
+
 .circles {
-    position:absolute;
+    position: absolute;
     height: 52px;
     width: 52px;
-    background-color: #FCF6F5FF;
+    background-color: beige;
 
     border-radius: 100%;
 }
+
 .squiggle {
     width: 203px;
     height: 63px;
@@ -144,112 +154,119 @@ section .text {
     background-position: center;
     position: absolute;
 }
+
 .shapes {
     position: absolute;
     width: 100%;
     height: inherit;
-    
-}
- .services{
-    z-index:2 ;
 
 }
+
+.services {
+    z-index: 2;
+    font-weight: 300;
+
+}
+
 .circles:nth-of-type(1) {
     left: 5%;
     top: 20%;
-  }
-  
-  .circles:nth-of-type(2) {
+}
+
+.circles:nth-of-type(2) {
     left: 20%;
     top: 5%;
-  }
-  
-  .circles:nth-of-type(3) {
+}
+
+.circles:nth-of-type(3) {
     left: 20%;
     top: 50%;
-  }
-  
-  .circles:nth-of-type(4) {
+}
+
+.circles:nth-of-type(4) {
     left: 4%;
     top: 80%;
-  }
-  
-  .circles:nth-of-type(5) {
+}
+
+.circles:nth-of-type(5) {
     left: 70%;
     top: 5%;
-  }
-  
-  .circles:nth-of-type(6) {
+}
+
+.circles:nth-of-type(6) {
     left: 75%;
     top: 55%;
-  }
-  
-  .circles:nth-of-type(7) {
+}
+
+.circles:nth-of-type(7) {
     left: 85%;
     top: 30%;
-  }
-  
-  .circles:nth-of-type(8) {
+}
+
+.circles:nth-of-type(8) {
     left: 80%;
     top: 80%;
-  }
-  
-  .squiggle:nth-of-type(1) {
+}
+
+.squiggle:nth-of-type(1) {
     left: 5%;
     top: 2%;
-  }
-  
-  .squiggle:nth-of-type(2) {
+}
+
+.squiggle:nth-of-type(2) {
     left: 8%;
     top: 25%;
-  }
-  
-  .squiggle:nth-of-type(3) {
+}
+
+.squiggle:nth-of-type(3) {
     left: 3%;
     top: 60%;
-  }
-  
-  .squiggle:nth-of-type(4) {
+}
+
+.squiggle:nth-of-type(4) {
     left: 10%;
     top: 90%;
-  }
-  
-  .squiggle:nth-of-type(5) {
+}
+
+.squiggle:nth-of-type(5) {
     right: 10%;
     top: 7%;
-  }
-  
-  .squiggle:nth-of-type(6) {
+}
+
+.squiggle:nth-of-type(6) {
     right: 2%;
     top: 35%;
-  }
-  
-  .squiggle:nth-of-type(7) {
+}
+
+.squiggle:nth-of-type(7) {
     right: 9%;
     top: 60%;
-  }
-  
-  .squiggle:nth-of-type(8) {
+}
+
+.squiggle:nth-of-type(8) {
     right: 0%;
     bottom: 5%;
-  }
+}
 
 section .text {
     height: 100vh;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    
+
     position: sticky;
     background-repeat: no-repeat;
     background-position: center center;
-  
+
     background-size: cover;
 
 }
-section .text h2, section .text p {
-color: #fff;
+
+section .text h2,
+section .text p {
+    color: #fff;
 }
+
 section .y {
     background-image: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/source.gif);
 
@@ -272,12 +289,25 @@ section .container .services h3 {
     font-size: 47px;
 }
 
-form{
+form {
     margin-bottom: 50px;
 
 
 
 }
+.shape,
+.lineup li
+{
+  opacity: 0;
+ transition: opacity 0.5s ease;
+}
+
+.in-viewport .shape,
+.in-viewport .lineup li
+ {
+  opacity: 1;
+}
+
 
 .form-control {
     width: 600px;
@@ -287,18 +317,20 @@ form{
     border-bottom: 1px solid gray;
     color: gray;
     font-size: 18px;
-   
+
     margin-bottom: 36px;
     font-family: $body-font;
-    
+
 
 }
-.contact-form{
-position: relative;
+
+.contact-form {
+    position: relative;
 
 }
-.contact-heading{
-   
+
+.contact-heading {
+
     font-size: 44px;
     margin-top: 80px;
     margin-bottom: 40px;
@@ -310,80 +342,79 @@ input {
     height: 45px;
 }
 
-form .submit{
+form .submit {
     border-color: #fff;
     color: #000;
     font-size: 18px;
 
     width: auto;
-    font-weight: 600;
+    font-weight: 500;
 
 }
+
 .business {
 
     height: 35px;
 }
+
 .contact {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 
 }
+
 footer {
-   
+
     background-color: #000;
     padding-top: 70px;
     padding-bottom: 70px;
 
 }
-.contact-heading h3{
+
+footer p,
+footer ul {
+
+    font-weight: 300;
+}
+
+.contact-heading h3 {
     margin-right: 20px;
 
 }
- .hand {
+
+.hand {
     animation: pulse 3s infinite;
-    
-    
+
+
 }
+
 @keyframes pulse {
-0% {
-    transform: rotate(0deg);
-
-}
-50% {
-    transform: rotate(20deg);
-
-}
-100% {
-    transform: rotate(0deg);
-
-}
-
-
-}
-@keyframes pulsate {
     0% {
-        transform: scale(1);
-    
+        transform: rotate(0deg);
+
     }
+
     50% {
-        transform: scale(1.2);
-    
+        transform: rotate(20deg);
+
     }
+
     100% {
-        transform: scale(1);
-    
-    }
-    
-    
-    }
-    
+        transform: rotate(0deg);
 
+    }
 
-form .submit:hover{
-    cursor: pointer;
-    color:  #F9A12EFF;
 
 }
+
+
+
+form .submit:hover {
+    cursor: pointer;
+    color: #F9A12EFF;
+
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -399,22 +430,25 @@ form .submit:hover{
 }
 
 .footer-content p {
-    color:#fff;
+    color: #fff;
     font-family: $body-font;
     margin-bottom: 20px;
 
 }
+
 .footer-content ul li a {
     text-decoration: none;
     color: #fff;
-  
+
 }
-.footer-content ul li a:hover{
+
+.footer-content ul li a:hover {
     color: #F9A12EFF;
 
 }
+
 .address p {
-margin-bottom: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -442,14 +476,16 @@ margin-bottom: 5px;
 
     }
 
-    .container, .text {
+    .container,
+    .text {
         width: 100%;
         padding-top: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+
     }
+
     section .text {
         padding: 100px 30px;
 
@@ -461,33 +497,39 @@ margin-bottom: 5px;
 
     }
 }
+
 @media(max-width:715px) {
 
     .header {
-      
+
         padding: 25px 40px;
     }
+
     .header p {
-    
+
         font-size: 18px;
-    
+
     }
-    .header img{
+
+    .header img {
         width: 50px;
 
 
     }
+
     .footer-content {
         margin: 0 40px;
 
     }
-        
+
 }
-@media(max-width:700px){
+
+@media(max-width:700px) {
     .header {
-      
+
         padding: 25px 15px;
     }
+
     .footer-content {
         margin: 0 15px;
         flex-direction: column;
@@ -495,89 +537,111 @@ margin-bottom: 5px;
         text-align: center;
 
     }
-    .social-media{
+
+    .social-media {
         margin-top: 20px;
-        
-        }
-        .text p {
-            font-size: 32px;
-           
-        
-        }
-        section .text {
 
-            padding:100px 15px;
-        }
-        .hand img{
-            width: 25px;
-    
-    
-        }
-        .form-control {
-            width: 300px;
+    }
 
-        }
-        form {
-            
-            display: flex;
-            flex-direction: column;
-          
-            align-items: center;
-        }
-        .contact-heading {
-            font-size: 32px;
-        }
+    .text p {
+        font-size: 32px;
+
+
+    }
+
+    section .text {
+
+        padding: 100px 15px;
+    }
+
+    .hand img {
+        width: 25px;
+
+
+    }
+
+    .form-control {
+        width: 300px;
+
+    }
+
+    form {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .contact-heading {
+        font-size: 32px;
+    }
 }
-@media(max-width:420px){
+
+
+@media(max-width:420px) {
     section .headline {
         padding: 15px;
     }
-    .header p {
-    
-        font-size: 12px;
-    
-    }
-    .hero {
-        height: 100vh!important;
-    }
-    
-        .hero h1 {
-            font-size: 22px;
-        }
 
-        .text p {
-            font-size: 24px!important;
-        }
-        .text h2 {
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
+    .header p {
+
+        font-size: 12px;
+
+    }
+
+    .hero {
+        height: 100vh !important;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .text p {
+        font-size: 24px !important;
+    }
+
+    .text h2 {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .squiggle {
+        width: 110px;
+    }
 
     section .container .services h3 {
         text-align: center;
         margin-bottom: 80px;
         font-size: 22px;
     }
+
     .hand img {
         width: 45px;
         margin-bottom: 15px;
     }
+
     .contact-heading h3 {
         margin: 20px;
     }
+
     .contact-heading {
         font-size: 28px;
         display: flex;
-    flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
+
     .form-control {
         width: 300px;
         text-align: center;
     }
+
     .business {
         height: 45px;
 
     }
+
     .form-control {
         width: 600px;
         background: gainsboro;
@@ -588,31 +652,37 @@ margin-bottom: 5px;
         color: gray;
         font-size: 18px;
         margin-bottom: 18px;
-        font-family: "Libre Franklin",sans-serif;
+        font-family: "Libre Franklin", sans-serif;
     }
+
     .form-control {
         width: 300px;
         text-align: center;
     }
-    input, select, textarea {
+
+    input,
+    select,
+    textarea {
         font: inherit;
         line-height: 2.3;
     }
-    .submit{
+
+    .submit {
         background: 0;
 
     }
 }
+
 @media (max-height: 600px) {
-.hero {
+    .hero {
 
-    height: auto;
-}
+        height: auto;
+    }
 
-.text p {
-    font-size: 32px;
-   
+    .text p {
+        font-size: 32px;
 
-}
+
+    }
 
 }
