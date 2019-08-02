@@ -1,13 +1,13 @@
 <?php
     $name = $_POST_Post['name'];
     $visiter_email = $_POST['email']
+    $business = $_POST['business']
     $message = $_POST['message']
-    $business = $_POST['message']
 
 
-    $email_from = 'piocreative.com ' 
+    $email_from = 'piocreative.com' 
 
-    $email_subject = "New Sub"
+    $email_subject = "New Query"
 
     $email_body = "User Name: $name.\n";
                     "User Email: $visiter_email.\n";
