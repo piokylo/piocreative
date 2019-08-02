@@ -116,14 +116,14 @@ section .text {
 }
 .circles {
     position:absolute;
-    height: 62px;
-    width: 62px;
-    background-color: #FFEECF;
+    height: 42px;
+    width: 42px;
+    background-color: #FFB837;
 
     border-radius: 100%;
 }
 .squiggle {
-    width: 303px;
+    width: 203px;
     height: 63px;
     background-image: url("img/squiggle.svg");
     background-size: contain;
