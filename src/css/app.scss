@@ -108,11 +108,112 @@ section .text {
 .container {
     display: flex;
     justify-content: center;
-    height: 150vh;
+    height: 130vh;
     padding-top: 250px;
+    position: relative; 
 
 
 }
+.circles {
+    position:absolute;
+    height: 62px;
+    width: 62px;
+    background-color: #FFEECF;
+
+    border-radius: 100%;
+}
+.swiggle {
+width: 303px;
+height: 63px;
+background-image: url();
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center
+}
+.shapes {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+.circles:nth-of-type(1) {
+    left: 5%;
+    top: 20%;
+  }
+  
+  .circles:nth-of-type(2) {
+    left: 20%;
+    top: 5%;
+  }
+  
+  .circles:nth-of-type(3) {
+    left: 20%;
+    top: 50%;
+  }
+  
+  .circles:nth-of-type(4) {
+    left: 4%;
+    top: 80%;
+  }
+  
+  .circles:nth-of-type(5) {
+    left: 70%;
+    top: 5%;
+  }
+  
+  .circles:nth-of-type(6) {
+    left: 75%;
+    top: 55%;
+  }
+  
+  .circles:nth-of-type(7) {
+    left: 85%;
+    top: 30%;
+  }
+  
+  .circles:nth-of-type(8) {
+    left: 80%;
+    top: 80%;
+  }
+  
+  .squiggle:nth-of-type(1) {
+    left: 5%;
+    top: 2%;
+  }
+  
+  .squiggle:nth-of-type(2) {
+    left: 8%;
+    top: 25%;
+  }
+  
+  .squiggle:nth-of-type(3) {
+    left: 3%;
+    top: 60%;
+  }
+  
+  .squiggle:nth-of-type(4) {
+    left: 10%;
+    top: 90%;
+  }
+  
+  .squiggle:nth-of-type(5) {
+    right: 10%;
+    top: 7%;
+  }
+  
+  .squiggle:nth-of-type(6) {
+    right: 2%;
+    top: 35%;
+  }
+  
+  .squiggle:nth-of-type(7) {
+    right: 9%;
+    top: 60%;
+  }
+  
+  .squiggle:nth-of-type(8) {
+    right: 0%;
+    bottom: 5%;
+  }
 
 section .text {
     height: 100vh;
@@ -239,6 +340,23 @@ footer {
 
 
 }
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    
+    }
+    50% {
+        transform: scale(1.2);
+    
+    }
+    100% {
+        transform: scale(1);
+    
+    }
+    
+    
+    }
+    
 
 
 form .submit:hover{
@@ -304,14 +422,14 @@ margin-bottom: 5px;
 
     }
 
-    .text,
-    .container {
-
+    .container, .text {
         width: 100%;
-        height: auto;
         padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
     section .text {
         padding: 100px 30px;
 
