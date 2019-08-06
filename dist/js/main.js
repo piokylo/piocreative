@@ -59,6 +59,38 @@ squiggles.forEach((squiggle, index) => {
     )
 })
 
+const stars = document.querySelectorAll('.star')
+
+stars.forEach((star, index) => {
+    const randomNumber = random(0, 90)
+
+    console.log(randomNumber)
+
+    star.animate(
+        [
+            // gets a random num between 0 & 45
+            {
+                transform: 'rotate(0)'
+            },
+
+            // { transform: 'rotate(' + randomNumber + 'deg)' },
+            {
+                transform: `rotate(${randomNumber}deg)`
+            },
+
+            {
+                transform: 'rotate(0)'
+            }
+        ], {
+            // timing options
+            delay: 35 * index,
+            duration: 1000,
+            iterations: Infinity
+        }
+    )
+})
+
+
 
 inView('.container')
   .on('enter', section => {
