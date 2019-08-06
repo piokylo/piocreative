@@ -152,6 +152,16 @@ section .text {
     background-position: center;
     position: absolute;
 }
+.star {
+    width: 203px;
+    height: 63px;
+    background-image: url("img/star.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
 
 .shapes {
     position: absolute;
