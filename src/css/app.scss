@@ -136,11 +136,13 @@ section .text {
 }
 
 .circles {
+    width: 203px;
+    height: 63px;
+    background-image: url("img/elipse.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
-    height: 52px;
-    width: 52px;
-    background-color: beige;
-    border-radius: 100%;
 }
 
 .squiggle {
@@ -438,7 +440,7 @@ textarea {
 overflow: hidden;
 }
 
-
+input {
     input {
         padding: 0 0 0 2px;
     }
