@@ -74,6 +74,7 @@ h3 {
 
     font-size: 54px;
     font-weight: 300;
+    hyphens: none;
 }
 
 .text p {
@@ -526,10 +527,14 @@ form .submit:hover {
         display: block;
 
     }
+    .footer-content{
+        margin: 0 30px;
+
+    }
 
     section .text {
         position: inherit;
-        padding: 40px;
+        
         height: 600px;
 
     }
@@ -556,12 +561,10 @@ form .submit:hover {
     }
 
     section .text {
-        padding: 100px 30px;
 
-
+        padding: 30px;
     }
-
-    section .headline {
+    section .headline, .header {
         padding: 30px;
 
     }
@@ -597,6 +600,10 @@ form .submit:hover {
     .header {
 
         padding: 25px 15px;
+    }
+   section .headline {
+
+        padding: 15px;
     }
 
     .footer-content {
