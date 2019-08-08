@@ -320,6 +320,12 @@ section .text p {
     color: #fff;
 }
 
+@media(min-width: 700px){
+.address{
+
+    margin-left: 135px;
+}
+}
 section .y {
     background-image: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/source.gif);
    
