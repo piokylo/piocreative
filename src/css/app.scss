@@ -48,17 +48,17 @@ body {
 }
 
 .color-1 {
-    background-color: #FC766AFF;
+      background-color: #f78888;
 
 }
 
 .color-2 {
-    background-color: #F9A12EFF;
+    background-color: #90ccf4;
 
 }
 
 .color-3 {
-    background-color: #69D2E7;
+    background-color: #f3d250;
 
 
 }
@@ -136,7 +136,7 @@ section .text {
 }
 
 .circles {
-    width: 203px;
+    width: 100px;
     height: 63px;
     background-image: url("img/circles.svg");
     background-size: contain;
@@ -174,7 +174,8 @@ section .text {
 
 .services {
     z-index: 2;
-    font-weight: 300;
+    font-weight: 100;
+    color: #22264b;
 
 }
 
@@ -308,6 +309,8 @@ section .text {
     background-repeat: no-repeat;
     background-position: center center;
 
+
+
     background-size: cover;
 
 }
@@ -319,6 +322,9 @@ section .text p {
 
 section .y {
     background-image: url(https://media.giphy.com/media/JIX9t2j0ZTN9S/source.gif);
+   
+
+
 
 }
 
