@@ -434,6 +434,14 @@ footer ul {
 
 
 }
+textarea {
+overflow: hidden;
+}
+
+
+    input {
+        padding: 0 0 0 2px;
+    }
 
 @keyframes pulse {
     0% {
@@ -712,6 +720,7 @@ form .submit:hover {
     textarea {
         font: inherit;
         line-height: 2.3;
+ 
     }
 
     .submit {
