@@ -138,7 +138,7 @@ section .text {
 .circles {
     width: 203px;
     height: 63px;
-    background-image: url("img/elipse.svg");
+    background-image: url("img/circles.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -440,7 +440,7 @@ textarea {
 overflow: hidden;
 }
 
-input {
+
     input {
         padding: 0 0 0 2px;
     }
