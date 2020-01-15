@@ -413,7 +413,9 @@ form .submit {
     font-weight: 500;
 
 }
-
+.nw {
+    width: 80%;
+}
 .business {
 
     height: 35px;
@@ -658,8 +660,12 @@ form .submit:hover {
 @media(max-width:420px) {
     section .headline {
         padding: 15px;
+        align-items: start;
     }
-
+   
+    .nw {
+        width: 80%;
+    }
     .header p {
 
         font-size: 12px;
@@ -671,7 +677,7 @@ form .submit:hover {
     }
 
     .hero h1 {
-        font-size: 22px;
+        font-size: 26px !important;
     }
 
     .text p {
