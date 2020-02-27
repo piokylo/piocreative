@@ -769,3 +769,10 @@ form .submit:hover {
     }
 
 }
+@supports (-webkit-touch-callout: none) {
+    .shape,
+    .lineup li {
+        opacity: 1!important;
+        
+    }
+  }
